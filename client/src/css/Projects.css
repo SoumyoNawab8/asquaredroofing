@@ -1,0 +1,18 @@
+.projects {
+
+}
+
+.property {
+    margin-bottom:25px;
+    border:1px solid #ccc;
+    padding:15px;
+    width: 80%;
+}
+
+.property img {
+    width: 100%;
+}
+
+.property:hover {
+    cursor: pointer;
+}

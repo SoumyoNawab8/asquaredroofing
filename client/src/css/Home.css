@@ -1,0 +1,24 @@
+
+
+.creds {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom:100px;
+    background-image:url('../images/teams.jpg');
+}
+
+.creds ul {
+    list-style: none;
+    padding-left:0px !important;
+}
+
+.creds li {
+    padding:10px;
+    font-weight: bold;
+}
+
+
+
+

@@ -1,0 +1,13 @@
+.Navbar {
+    background-color: red;
+    
+}
+
+.Link {
+    color:white !important;
+    text-transform: uppercase;
+}
+
+.Link:hover {
+    color: '#fff';
+}
