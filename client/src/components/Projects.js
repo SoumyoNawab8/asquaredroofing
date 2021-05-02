@@ -7,7 +7,7 @@ import Logo from './../images/logo.png'
 import properties from './../properties/properties'
 import './../css/Projects.css'
 import './CustomeCarousel'
-import video from '../video/home_video.mp4'
+//import video from '../video/home_video.mp4'
 
 const Projects = (props) => {
 
@@ -58,7 +58,7 @@ const Projects = (props) => {
                 <div class='mobile-show'>
                     <div class='video-container'>
                         <video id='vid' width="100%" height="100%" controls autoplay loop muted>
-                            <source src={video}/>
+                            {/* <source src={video}/> */}
                         </video>
                     </div>
                 </div>
