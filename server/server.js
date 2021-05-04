@@ -9,7 +9,10 @@ const sendRouter = require('./routes/send')
 
 app.use(cors());
 app.use(express.json());
-// app.use(express.static("../client/build"));
+
+if(process.env.NODE_ENV === "production")
+    app.use(express.static("client/build"));
+
 app.use('/', sendRouter);
 
 
