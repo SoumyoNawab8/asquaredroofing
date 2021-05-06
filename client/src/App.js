@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Services from './components/Services'
 import Projects from './components/Projects'
 import './css/App.css'
+import NewConstruction from './components/NewConstruction'
 
 const App = (props) => {
   
@@ -20,6 +21,9 @@ const App = (props) => {
           </Route>
           <Route exact path="/projects">
             <Projects/>
+          </Route>
+          <Route exact path="/new-projects">
+            <NewConstruction/>
           </Route>
         </Switch>
       </Router>

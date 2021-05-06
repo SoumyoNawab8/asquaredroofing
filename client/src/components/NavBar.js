@@ -12,6 +12,7 @@ const NavBar = (props) => {
                     <NavLink className="Link nav-link" exact to="/">Home</NavLink>
                     <NavLink className="Link nav-link" exact to="/services">Services</NavLink>
                     <NavLink className="Link nav-link" exact to="/projects">Projects</NavLink>
+                    <NavLink className="Link nav-link" exact to="/new-projects">Newer Projects</NavLink>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

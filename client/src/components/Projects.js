@@ -4,7 +4,7 @@ import { Container, Col, Row, Modal, Button } from 'react-bootstrap'
 import CustomeCarousel from './CustomeCarousel'
 import ContactForm from './ContactForm'
 import Logo from './../images/logo.png'
-import properties from './../properties/properties'
+import properties from './../properties/older-properties'
 import './../css/Projects.css'
 import './CustomeCarousel'
 //import video from '../video/home_video.mp4'
@@ -65,7 +65,7 @@ const Projects = (props) => {
                 <NavBar />
                 <Row className="Row padding-50">
                     <Col className='Col projects' md={ 7 }>
-                        <h1>Projects</h1>
+                        <h1>Older Construction</h1>
                         <hr />
                         <RenderProperties />
                     </Col>

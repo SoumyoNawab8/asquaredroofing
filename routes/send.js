@@ -11,20 +11,19 @@ let transporter = nodemailer.createTransport({
 });
 
 router.post('/send', (req, res) => {
-    // let mailOptions = {
-    //     from: 'baiterxrs@gmail.com',
-    //     to: 'baiterxrs@gmail.com',
-    //     subject: 'Testing',
-    //     text: req.body.message
-    // }
+    let mailOptions = {
+        from: 'baiterxrs@gmail.com',
+        to: 'baiterxrs@gmail.com',
+        subject: 'Testing',
+        text: req.body.message
+    }
    
-    // transporter.sendMail(mailOptions, function(err, data) {
-    //     if(err)
-    //         res.send('Message failed to send.');
-    //     else
-    //         res.status(200).send('Message sent.');
-    // });
-    res.send("received");
+    transporter.sendMail(mailOptions, function(err, data) {
+        if(err)
+            res.send('Message failed to send.');
+        else
+            res.status(200).send('Message sent.');
+    });
 });
 
 
