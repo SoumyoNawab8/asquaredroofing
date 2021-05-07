@@ -17,11 +17,12 @@ const ContactForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        var URL = "";
 
         if(process.env.NODE_ENV === 'production')
-            let URL = process.env.URL;
+            URL = process.env.URL;
         else
-            let URL = '/send';
+            URL = '/send';
 
         const formData = {
             email: email,
