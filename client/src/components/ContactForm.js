@@ -20,7 +20,7 @@ const ContactForm = (props) => {
         var URL = "";
 
         if(process.env.NODE_ENV === 'production')
-            URL = process.env.URL;
+            URL = process.env.URL + 'send';
         else
             URL = '/send';
 
@@ -33,6 +33,8 @@ const ContactForm = (props) => {
             roofType: roofType,
             message: message
         }
+
+        console.log(URL);
         axios({
           method: "POST", 
           url: URL,
