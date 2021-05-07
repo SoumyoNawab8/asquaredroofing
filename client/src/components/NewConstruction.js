@@ -58,7 +58,7 @@ const NewConstruction = (props) => {
                 <div class='mobile-show'>
                     <div class='video-container'>
                         <video id='vid' width="100%" height="100%" controls autoplay loop muted>
-                            <source src={video}/>
+                            <source src="https://dl.dropboxusercontent.com/s/uw71zoayd4bffh6/A2%20Roofing%20Inc%20-%2009.04.2021.mp4?dl=0%22/%3E"/>
                         </video>
                     </div>
                 </div>
