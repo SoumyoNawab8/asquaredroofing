@@ -15,9 +15,14 @@ const ContactForm = (props) => {
     const formRef = useRef();
 
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if(process.env.NODE_ENV === 'production')
+            const URL = process.env.URL;
+        else
+            const URL = '/send';
+
         const formData = {
             email: email,
             street: street,
@@ -29,7 +34,7 @@ const ContactForm = (props) => {
         }
         axios({
           method: "POST", 
-          url:"/send", 
+          url: URL,
           data:  formData,
           headers: {
               'Content-Type': 'application/json'
