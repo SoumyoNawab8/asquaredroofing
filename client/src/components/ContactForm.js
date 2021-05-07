@@ -30,8 +30,11 @@ const ContactForm = (props) => {
         axios({
           method: "POST", 
           url:"/send", 
-          data:  formData
-        }).then((response) => {
+          data:  formData,
+          headers: {
+              'Content-Type': 'application/json'
+          }
+        }).then(response => {
           alert(response.data);
         });
     }
