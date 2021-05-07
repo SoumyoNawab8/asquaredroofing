@@ -19,9 +19,9 @@ const ContactForm = (props) => {
         e.preventDefault();
 
         if(process.env.NODE_ENV === 'production')
-            const URL = process.env.URL;
+            let URL = process.env.URL;
         else
-            const URL = '/send';
+            let URL = '/send';
 
         const formData = {
             email: email,
