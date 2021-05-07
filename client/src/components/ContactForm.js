@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { Form, Row, Col, Button } from  'react-bootstrap'
 import './../css/ContactForm.css'
-require('dotenv').config();
 
 const axios = require('axios').default;
 
@@ -22,7 +21,7 @@ const ContactForm = (props) => {
         var URL = "";
 
         if(process.env.NODE_ENV === 'production')
-            URL = process.env.URL + 'send';
+            URL = 'https://asquaredroofing.herokuapp.com/#/send';
         else
             URL = '/send';
 
