@@ -4,7 +4,7 @@ import { Container, Col, Row } from 'react-bootstrap'
 import ContactForm from './ContactForm'
 import Logo from '../images/logo.png'
 import '../css/Home.css'
-//import video from '../video/home_video.mp4'
+import video from '../video/home_video.mp4'
 
 const Home = (props) => {
 
@@ -19,7 +19,7 @@ const Home = (props) => {
                 <div class='mobile-show'>
                     <div class='video-container'>
                         <video id='vid' width="100%" height="100%" controls autoplay loop muted>
-                            {/* <source src={video}/> */}
+                            <source src={video}/>
                         </video>
                     </div>
                 </div>
