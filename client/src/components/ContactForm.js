@@ -21,7 +21,7 @@ const ContactForm = (props) => {
         var URL = "";
 
         if(process.env.NODE_ENV === 'production')
-            URL = 'https://asquaredroofing.herokuapp.com/api/send';
+            URL = 'https://asquaredroofing.herokuapp.com/#/api/send';
         else
             URL = 'http://localhost:5000/api/send';
 
