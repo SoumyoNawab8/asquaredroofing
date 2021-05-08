@@ -4,7 +4,6 @@ import { Container, Col, Row } from 'react-bootstrap'
 import ContactForm from './ContactForm'
 import Logo from '../images/logo.png'
 import '../css/Home.css'
-import video from '../video/home_video.mp4'
 
 const Home = (props) => {
 

@@ -7,7 +7,6 @@ import Logo from './../images/logo.png'
 import properties from './../properties/newer-properties'
 import './../css/Projects.css'
 import './CustomeCarousel'
-import video from '../video/home_video.mp4'
 
 const NewConstruction = (props) => {
 
