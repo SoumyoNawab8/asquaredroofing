@@ -8,9 +8,8 @@ const sendRouter = require('./routes/send')
 app.use(cors());
 app.use(express.json());
 
-if(process.env.NODE_ENV === "production")
-    app.use(express.static("client/build"));
+app.use(express.static("client/build"));
 
-app.use('/', sendRouter);
+app.use('/api', sendRouter);
 
 app.listen(port, () => console.log(`listening on port ${port}`));
