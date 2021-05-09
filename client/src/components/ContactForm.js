@@ -50,7 +50,7 @@ const ContactForm = (props) => {
 
 
     return (
-            <Form ref={formRef} className="Form" onSubmit={handleSubmit} method="POST">
+            <Form ref={formRef} className="Form" onSubmit={handleSubmit} >
 
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
